@@ -1,6 +1,7 @@
 import rx.Observable;
 import rx.functions.Action0;
 import rx.functions.Action1;
+import com.github.davidmoten.rx.FileObservable;
 
 class RxExample1 {
     public static void sayHello(String[] names) {
@@ -39,10 +40,26 @@ class RxExample1 {
         });
     }
 
+    public static void tailSyslog() {
+        Observable<String> syslog =
+                FileObservable.tailer()
+                        .file("/var/log/syslog")
+                        .tailText();
+
+        syslog.forEach(new Action1<String>() {
+            @Override
+            public void call(String s) {
+                System.out.println("Riga di log: " + s);
+            }
+        });
+    }
+
     public static void main(String args[]) {
 
         sayHello(new String[]{"uno", "due", "tre"});
         sayHelloAlways("one", "two", "three");
+        tailSyslog();
+
     }
 
 }

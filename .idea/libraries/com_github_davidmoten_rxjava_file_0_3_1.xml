@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.davidmoten:rxjava-file:0.3.1" type="repository">
+    <properties maven-id="com.github.davidmoten:rxjava-file:0.3.1" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/rxjava-file-0.3.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rxjava-1.0.8.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/rxjava-string-0.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

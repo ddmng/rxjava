@@ -9,5 +9,9 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="rxjava-1.0.14" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
+    <orderEntry type="library" name="rxjava-file-0.3.3" level="project" />
+    <orderEntry type="library" name="rxjava-string-1.0.1" level="project" />
+    <orderEntry type="library" name="com.github.davidmoten:rxjava-file:0.3.1" level="project" />
   </component>
 </module>
