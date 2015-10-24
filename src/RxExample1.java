@@ -49,7 +49,17 @@ class RxExample1 {
         syslog.forEach(new Action1<String>() {
             @Override
             public void call(String s) {
-                System.out.println("Riga di log: " + s);
+                System.out.println("New log: " + s);
+            }
+        }, new Action1<Throwable>() {
+            @Override
+            public void call(Throwable throwable) {
+                System.out.println("Exception: " + throwable);
+            }
+        }, new Action0() {
+            @Override
+            public void call() {
+                System.out.println("Complete");
             }
         });
     }
